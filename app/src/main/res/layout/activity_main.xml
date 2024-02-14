@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tV3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="third random number"
+        app:layout_constraintEnd_toStartOf="@+id/tV5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tV1"
+        app:layout_constraintTop_toTopOf="@+id/tV1" />
+
+    <TextView
+        android:id="@+id/tV5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="fifth random number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tV3"
+        app:layout_constraintTop_toTopOf="@+id/tV1" />
+
+    <TextView
+        android:id="@+id/tV1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:text="first random number"
+        app:layout_constraintEnd_toStartOf="@+id/tV3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tV2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:text="second random number"
+        app:layout_constraintEnd_toEndOf="@+id/tV1"
+        app:layout_constraintStart_toStartOf="@+id/tV1"
+        app:layout_constraintTop_toBottomOf="@+id/tV1" />
+
+    <TextView
+        android:id="@+id/tV4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:text="fourth random number"
+        app:layout_constraintEnd_toEndOf="@+id/tV3"
+        app:layout_constraintStart_toStartOf="@+id/tV3"
+        app:layout_constraintTop_toBottomOf="@+id/tV3" />
+
+    <TextView
+        android:id="@+id/tV6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:text="sisxth random number"
+        app:layout_constraintEnd_toEndOf="@+id/tV5"
+        app:layout_constraintStart_toStartOf="@+id/tV5"
+        app:layout_constraintTop_toBottomOf="@+id/tV5" />
+
+    <ImageView
+        android:id="@+id/iV1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/redx"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/eT1"
+        app:layout_constraintStart_toStartOf="@+id/eT1"
+        app:layout_constraintTop_toBottomOf="@+id/eT1" />
+
+    <ImageView
+        android:id="@+id/iV2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/redx"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/eT2"
+        app:layout_constraintStart_toStartOf="@+id/eT2"
+        app:layout_constraintTop_toBottomOf="@+id/eT2" />
+
+    <ImageView
+        android:id="@+id/iV3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/redx"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/eT3"
+        app:layout_constraintStart_toStartOf="@+id/eT3"
+        app:layout_constraintTop_toBottomOf="@+id/eT3" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="99dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:onClick="check1"
+        android:text="check"
+        app:layout_constraintEnd_toEndOf="@+id/iV1"
+        app:layout_constraintStart_toStartOf="@+id/iV1"
+        app:layout_constraintTop_toBottomOf="@+id/iV1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="99dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:onClick="check2"
+        android:text="check"
+        app:layout_constraintEnd_toEndOf="@+id/iV2"
+        app:layout_constraintStart_toStartOf="@+id/iV2"
+        app:layout_constraintTop_toBottomOf="@+id/iV2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="99dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:onClick="check3"
+        android:text="check"
+        app:layout_constraintEnd_toEndOf="@+id/iV3"
+        app:layout_constraintStart_toStartOf="@+id/iV3"
+        app:layout_constraintTop_toBottomOf="@+id/iV3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="114dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:onClick="restart"
+        android:text="restart"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <EditText
+        android:id="@+id/eT1"
+        android:layout_width="105dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Enter answer"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tV2"
+        app:layout_constraintStart_toStartOf="@+id/tV2"
+        app:layout_constraintTop_toBottomOf="@+id/tV2" />
+
+    <EditText
+        android:id="@+id/eT2"
+        android:layout_width="105dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Enter answer"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tV4"
+        app:layout_constraintStart_toStartOf="@+id/tV4"
+        app:layout_constraintTop_toBottomOf="@+id/tV4" />
+
+    <EditText
+        android:id="@+id/eT3"
+        android:layout_width="105dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Enter answer"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tV6"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/tV6"
+        app:layout_constraintTop_toBottomOf="@+id/tV6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
